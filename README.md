@@ -85,7 +85,7 @@ It should also have a method ("toString") where it returns a string of the curre
 Finally, add a function (addBigIntegers) that is seperate from the object that takes two strings, and returns the sum of their big integers.
 
 HINT: The way I recommend going about this is to have an array of digits that represent each digit in the number, and perform the logic that way. But you may do whatever you want.
-## Problem 7: Number to Words
+## (OPTIONAL) Problem 7: Number to Words
 Write a function ("toWords") that takes as a parameter some integer (positive or negative) inclusively between -10,000,000,000,000 and 10,000,000,000,000 (positive and negative ten trillion). The number should return a string of that word written out. For example:
 ```
 toWords(545) // returns "five hundred forty five"
