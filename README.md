@@ -75,7 +75,7 @@ The method should update the creditHours and gpa fields of the object.  Note tha
 New GPA = (oldGPA * oldCreditHours + semesterGPA * semesterCreditHours) / totalCreditHours
 ```
 Note that the above is pseudocode and should be refactored to fit the proper variable names.
-## Problem 6: Big Integer
+## (OPTIONAL) Problem 6: Big Integer
 The largest integer that can be stored in JavaScript is 9007199254740991 (slightly over 9 quadrillion). There are situations when one might need to use a larger number. You should implement a function "bigInteger" takes a string "n" that returns an object that represents this number. 
 
 It should also have a method ("add") where it takes a BigInteger through param and returns the value of the aboject added to the parameter (note that the value of neither the object nor the param change).
