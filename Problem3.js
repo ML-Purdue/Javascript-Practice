@@ -1,5 +1,9 @@
 // Problem 3
 
 function fib(n) {
-	return 0;
+	var fib = [1, 1];
+	for (i = 2; i < n + 1; i++) {
+		fib[i] = fib[i - 2] + fib[i - 1];
+	}
+	return fib[n];
 }
