@@ -31,7 +31,7 @@ Example Usage:
 concatenate(["Hello", "World", "This", "Is", "SIGART"]); // Should return "Hello World This Is Sigart"
 ```
 ## Problem 2: Fizz Bizz
-Write a function "fizzBizz" takes a number as a param and that prints to the Javascript Console that number. However, if that number is divisible by 3, print "Fizz", or if it's divizible by 5, print "Bizz". If it's divizible by both, print "FizzBizz".
+Write a function "fizzBizz" takes a number as a param and that returns a string of that number. However, if that number is divisible by 3, return "Fizz", or if it's divizible by 5, return "Bizz". If it's divizible by both, return "FizzBizz".
 Examples:
 ```
 fizzBizz(7); // prints "7"
