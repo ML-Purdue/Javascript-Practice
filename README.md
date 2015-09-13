@@ -40,9 +40,11 @@ fizzBizz(15); // prints "FizzBizz"
 ```
 ## Problem 3: Fibonacci
 Write a function "fib" that takes a number 'n' as a param and returns the nth fibonacci number. Note that fib(n) is defined as follows:
+```
 fib(0) = 1;
 fib(1) = 1;
 fib(n) = fib(n-1) + fib(n-2);
+```
 HINT: I highly recommend you implement this recurrsively. You may also assume you are working with an integer greater than or equal to 0.
 Examples:
 ```
