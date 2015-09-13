@@ -15,6 +15,7 @@ git checkout -b <Your Name>
 This will allow you to work on and publish your own solutions to these exercises while allowing others to work on them as well.
 Once you are done, type the following to commit:
 ```
+git add .
 git commit -m "Implemented Problems"
 git push origin <Your Branch>
 ```
@@ -40,9 +41,11 @@ fizzBizz(15); // prints "FizzBizz"
 ```
 ## Problem 3: Fibonacci
 Write a function "fib" that takes a number 'n' as a param and returns the nth fibonacci number. Note that fib(n) is defined as follows:
+```
 fib(0) = 1;
 fib(1) = 1;
 fib(n) = fib(n-1) + fib(n-2);
+```
 HINT: I highly recommend you implement this recurrsively. You may also assume you are working with an integer greater than or equal to 0.
 Examples:
 ```
@@ -73,7 +76,11 @@ New GPA = (oldGPA * oldCreditHours + semesterGPA * semesterCreditHours) / totalC
 ```
 Note that the above is pseudocode and should be refactored to fit the proper variable names.
 ## Problem 6: Big Integer
-The largest integer that can be stored in JavaScript is 9007199254740991 (slightly over 9 quadrillion). There are situations when one might need to use a larger number. You should implement a function "bigInteger" takes a string "n" that returns an object that represents this number. It should also have a method ("add") where it takes a BigInteger through param and returns the value of the aboject added to the parameter (note that the value of neither the object nor the param change).
+The largest integer that can be stored in JavaScript is 9007199254740991 (slightly over 9 quadrillion). There are situations when one might need to use a larger number. You should implement a function "bigInteger" takes a string "n" that returns an object that represents this number. 
+
+It should also have a method ("add") where it takes a BigInteger through param and returns the value of the aboject added to the parameter (note that the value of neither the object nor the param change).
+
+It should also have a method ("toString") where it returns a string of the current value of the big integer.
 
 Finally, add a function (addBigIntegers) that is seperate from the object that takes two strings, and returns the sum of their big integers.
 
@@ -81,8 +88,8 @@ HINT: The way I recommend going about this is to have an array of digits that re
 ## Problem 7: Number to Words
 Write a function ("toWords") that takes as a parameter some integer (positive or negative) inclusively between -10,000,000,000,000 and 10,000,000,000,000 (positive and negative ten trillion). The number should return a string of that word written out. For example:
 ```
-toWords(545) // returns "five hundred fourty five"
+toWords(545) // returns "five hundred forty five"
 toWords(74) // returns "seventy four"
-toWords(54245245467) // returns "fifty four billion two hundred forty five million two hundred forty five thousand four hundred sixty-seven"
+toWords(54245245467) // returns "fifty four billion two hundred forty five million two hundred forty five thousand four hundred sixty seven"
 ```
 Note the lack of the use of "and".
