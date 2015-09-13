@@ -1,5 +1,5 @@
 // Problem 5
 
-function student(name, gradeLevel, gpa) {
+function student(name, gradeLevel, gpa, creditHours) {
 	return null;
 }
