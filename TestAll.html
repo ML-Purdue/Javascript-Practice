@@ -285,10 +285,10 @@
     	<script>
 			try {
 				var myStudent = student("Bill", 3, 3.5, 30);
-				if (!(student.name === "Bill" && student.gradeLevel == 3 && student.gpa == 3.5 && student.creditHours == 30))
+				if (!(myStudent.name === "Bill" && myStudent.gradeLevel == 3 && myStudent.gpa == 3.5 && myStudent.creditHours == 30))
 					throw 101;
-				student.addSemesterGPA(2.0, 15);
-				if (!(student.gpa == 3.0 && student.creditHours == 45))
+				myStudent.addSemesterGPA(2.0, 15);
+				if (!(myStudent.gpa == 3.0 && myStudent.creditHours == 45))
 					throw 102;
 				document.write("<font color='green'>Test Passed</font>");		
 			} catch (err) {
@@ -302,11 +302,11 @@
 	<li>
 	<script>
 			try {
-				var myBigInteger = bigInteger("10342015310513510355134");
-				var myOtherBigInteger = bigInteger("652659659639595629994669256");
-				if (!(myBigInteger.add(myOtherBigInteger) === "652670001654906143505024390"))
+				var myBigInteger = new bigInteger("10342015310513510355134");
+				var myOtherBigInteger = new bigInteger("652659659639595629994669256");
+				if (!(myBigInteger.add(myOtherBigInteger).toString() === "652670001654906143505024390"))
 					throw 102;
-				if (!(addBigIntegers("10342015310513510355134","652659659639595629994669256") === "652670001654906143505024390"))
+				if (!(addBigIntegers("10342015310513510355134","652659659639595629994669256").toString() === "652670001654906143505024390"))
 					throw 103;
 				document.write("<font color='green'>Test Passed</font>");		
 			} catch (err) {
