@@ -8,7 +8,7 @@ Run the following command to get the repository onto your machine:
 git clone <url>
 ```
 where <url> is the clone URL. You should see this on the project page on the right hand side.
-Once you clone the branch, you should make your own branch:
+Once you clone the repository, you should make your own branch:
 ```
 git checkout -b <Your Name>
 ```
