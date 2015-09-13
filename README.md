@@ -15,6 +15,7 @@ git checkout -b <Your Name>
 This will allow you to work on and publish your own solutions to these exercises while allowing others to work on them as well.
 Once you are done, type the following to commit:
 ```
+git add .
 git commit -m "Implemented Problems"
 git push origin <Your Branch>
 ```
